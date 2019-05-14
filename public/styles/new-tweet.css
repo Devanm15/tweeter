@@ -4,8 +4,7 @@ section.new-tweet {
 	background-color: #eee;
 	margin: auto;
 	width: 100%;
-	position: center;
-	/*right: 10%;*/
+	position: relative;
 }
 
 section h2 {
@@ -14,9 +13,9 @@ section h2 {
 }
 
 textarea {
-	padding-top: 4px;
+	padding: 4px 125px 4px 4px;
 
-	width: 100%;
+	/*width: 100%;*/
 }
 
 span.counter {
