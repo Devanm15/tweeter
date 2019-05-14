@@ -1,0 +1,37 @@
+#nav-bar {
+	background-color: #00a087;
+	padding: 0px 2em;
+	overflow: auto;
+}
+
+#nav-bar .sticky {
+	position: fixed;
+	top: 0%;
+	width: 100%;
+}
+
+#nav-bar .header {
+	color: #e8fdff;
+	float: left;
+	font-size: 200%;
+	line-height: 80px;
+	float: left;
+	position: center;
+}
+
+#nav-bar .logo {
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin-right: 10px;
+
+	/*margin: 10px;*/
+
+	/*overflow: auto;*/
+}
+/*#nav-bar.clearfix::after {
+	content: "";
+	visibility: hidden;
+	display: block;
+	clear: both;
+}*/
