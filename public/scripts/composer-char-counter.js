@@ -1,6 +1,6 @@
 const maxCharacter = 140;
 $(document).ready(function() {
-	$("textarea").keyup(function() {
+	$("#text-insert").keyup(function() {
 		const character = maxCharacter - $(this).val().length;
 		const count = $(this)
 			.siblings(".counter")
