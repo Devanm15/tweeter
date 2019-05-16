@@ -21,13 +21,13 @@
 }
 .avatar {
 	float: left;
-	border-radius: 75px;
+	border-radius: 15px;
 }
 .username {
 	vertical-align: top;
 	margin-left: 10px;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 20px;
 	color: #24475185;
 }
 .tweet header h6 {

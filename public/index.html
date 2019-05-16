@@ -51,7 +51,7 @@
         <main class="container">
             <section class="new-tweet">
                 <h2>Compose Tweet</h2>
-                <form method="POST" action="/tweets">
+                <form method="POST" action="/tweets" id="submits">
                     <textarea
                         name="text"
                         placeholder="What are you humming about?"
@@ -62,20 +62,7 @@
                 </form>
             </section>
             <section class="tweet-container">
-                <article class="tweet">
-                    <header>
-                        <img
-                            class="avatar"
-                            src="https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png"
-                        />
-                        <span class="username">David</span>
-                        <h6>@username</h6>
-                    </header>
-                    <section class="body-of-article">
-                        <p>some imput to see whats going on</p>
-                    </section>
-                    <footer><p>Time since last post</p></footer>
-                </article>
+                <article class="tweet"></article>
             </section>
         </main>
     </body>
