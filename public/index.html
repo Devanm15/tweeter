@@ -45,6 +45,9 @@
         <nav id="nav-bar">
             <img class="logo" src="/images/bird.png" />
             <span class="header">Tweeter</span>
+            <button class="compose">
+                <text>Compose</text>
+            </button>
         </nav>
 
         <!-- Page-specific (main) content here -->
@@ -59,6 +62,12 @@
                     ></textarea>
                     <input type="submit" value="Tweet" />
                     <span class="counter">140</span>
+                    <label id="longerror" name="Error-Message">
+                        This message has two many characters</label
+                    >
+                    <label id="noTextError" name="Error-Message">
+                        Please add text</label
+                    >
                 </form>
             </section>
             <section class="tweet-container">

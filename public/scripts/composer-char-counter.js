@@ -7,6 +7,8 @@ $(document).ready(function() {
 			.text(character);
 		if ($(this).val().length > maxCharacter) {
 			count.css("color", "red");
+		} else {
+			count.css("color", "black");
 		}
 	});
 });

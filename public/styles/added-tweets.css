@@ -42,6 +42,7 @@
 	background: #ffffff;
 	height: 100px;
 	padding: 20px 20px;
+	word-wrap: break-word;
 }
 
 .tweet footer {

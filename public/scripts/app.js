@@ -7,6 +7,7 @@
 // Test / driver code (temporary). Eventually will get this from the server.
 
 function renderTweets(tweets) {
+	$(".tweet-container").empty();
 	tweets.forEach(data => {
 		$(".tweet-container").prepend(createTweetElement(data));
 	});
@@ -48,25 +49,39 @@ function loadTweets() {
 		}
 	});
 }
+loadTweets();
 $(document).ready(function() {
-	// loadTweets();
+	$(".compose").on("click", function() {
+		$(".new-tweet").slideToggle() && $("#text-insert").focus();
+	});
+
+	loadTweets();
 	$(function() {
 		let $newPost = $("form");
 		$newPost.submit(function(event) {
-			// event.preventDefault();
+			$("#longerror").hide();
+			$("#noTextError").hide();
 			let textInput = $("#text-insert").val().length;
-			if (textInput > 140) {
-				alert("This message has too many characters");
-			}
+			event.preventDefault();
 			if (textInput === 0 || textInput === " " || textInput === null) {
-				alert("Text required");
+				$("#noTextError")
+					.hide()
+					.slideToggle();
+			} else if (textInput > 140) {
+				$("#longerror")
+					.hide()
+					.slideToggle();
+			} else {
+				$.ajax({
+					type: "POST",
+					url: "/tweets",
+					data: $("#submits").serialize(),
+					success: function() {
+						loadTweets();
+						$("#text-insert").val(" ");
+					}
+				});
 			}
-			$.ajax({
-				type: "POST",
-				url: "/tweets",
-				data: $("#submits").serialize(),
-				success: loadTweets()
-			});
 		});
 	});
 });
