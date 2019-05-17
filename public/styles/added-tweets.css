@@ -6,13 +6,14 @@
 	margin: auto;
 	width: 100%;
 	position: relative;
-	opacity: 0.5;
-	filter: alpha(opacity=50);
+	opacity: 0.7;
+	filter: alpha(opacity=75);
 }
 
 .tweet header {
 	border-radius: 12px 12px 0px 0px;
-	background-color: #edadeb;
+	background-color: #194893;
+	font: #bbcdea;
 	width: 100%;
 	height: 100px;
 	padding: 1em 1em;
@@ -28,13 +29,13 @@
 	margin-left: 10px;
 	font-weight: bold;
 	font-size: 20px;
-	color: #24475185;
+	color: #bbcdea;
 }
 .tweet header h6 {
 	top: 0%;
 	float: right;
 	padding: 1px 6px;
-	color: #4c4caa;
+	color: #bbcdea;
 	font-size: 18px;
 }
 
