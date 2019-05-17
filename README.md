@@ -4,9 +4,9 @@ Tweeter is a simple, single-page Twitter clone, that allows users to post tweets
 
 ##Screenshots
 
-https://raw.githubusercontent.com/Devanm15/tweeter/master/docs/tweetpage.png
-https://github.com/Devanm15/tweeter/blob/master/docs/Highlightedtweet.png?raw=true
-https://github.com/Devanm15/tweeter/blob/master/docs/composetweet.png?raw=true
+!["Screenshot of main tweet page"](https://raw.githubusercontent.com/Devanm15/tweeter/master/docs/tweetpage.png)
+!["Screenshot of the highlighted tweet on hover"](https://github.com/Devanm15/tweeter/blob/master/docs/Highlightedtweet.png?raw=true)
+!["Screenshot of the composed tweet"](https://github.com/Devanm15/tweeter/blob/master/docs/composetweet.png?raw=true)
 
 ## Getting Started
 
