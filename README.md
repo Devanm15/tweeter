@@ -4,6 +4,10 @@ Tweeter is a simple, single-page Twitter clone, that allows users to post tweets
 
 ##Screenshots
 
+https://raw.githubusercontent.com/Devanm15/tweeter/master/docs/tweetpage.png
+https://github.com/Devanm15/tweeter/blob/master/docs/Highlightedtweet.png?raw=true
+https://github.com/Devanm15/tweeter/blob/master/docs/composetweet.png?raw=true
+
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
