@@ -26,13 +26,27 @@ function createTweetElement(tweet) {
 		.text(tweet.user.name)
 		.addClass("username");
 	let $content = $("<p>").text(tweet.content.text);
-	let $created_at = $("<p>").text(tweet.created_at);
+	let $created_at = $("<p>").text(
+		moment(new Date(tweet.created_at)).fromNow()
+	);
+	let $heart = $("<img>")
+		.addClass("icon")
+		.attr("src", "https://img.icons8.com/metro/26/000000/hearts.png");
+	let $retweet = $("<img>")
+		.addClass("icon")
+		.attr("src", "https://img.icons8.com/windows/26/000000/retweet.png");
+	let $return = $("<img>")
+		.addClass("icon")
+		.attr("src", "https://img.icons8.com/metro/26/000000/undo.png");
 
 	$header.append($image);
 	$header.append($handle);
 	$header.append($Username);
 	$body.append($content);
 	$footer.append($created_at);
+	$footer.append($heart);
+	$footer.append($retweet);
+	$footer.append($return);
 	$tweet.append($header);
 	$tweet.append($body);
 	$tweet.append($footer);
@@ -79,6 +93,7 @@ $(document).ready(function() {
 					success: function() {
 						loadTweets();
 						$("#text-insert").val(" ");
+						$(".counter").text(140);
 					}
 				});
 			}

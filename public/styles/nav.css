@@ -1,5 +1,5 @@
 #nav-bar {
-	background-color: #00a087;
+	background-color: #7faaef;
 	padding: 0px 2em;
 	overflow: auto;
 	position: fixed;
@@ -7,12 +7,6 @@
 	width: 100%;
 	z-index: 10000;
 }
-
-/*#nav-bar .sticky {
-	position: fixed;
-	top: 0%;
-	width: 100%;
-}*/
 
 #nav-bar .header {
 	color: #e8fdff;
@@ -31,11 +25,12 @@
 
 #nav-bar .compose {
 	margin: 5px 0px;
-	width: 80px;
+	width: 85px;
 	height: 70px;
 	float: right;
 	background-color: #c8f4ee;
 	border-radius: 15px;
+	border: 2px solid #4c4caa;
 	opacity: 0.5;
 	filter: alpha(opacity=50);
 }
